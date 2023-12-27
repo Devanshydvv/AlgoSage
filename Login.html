@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AlgoSage</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!--ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- GOOGLE FONTS (MONTSERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle
+                ('window-scroll', window.scrollY > 0)
+        });
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/contact.css"> -->
+
+    <style>
+        body {
+            background-image: url("/images/bg-texture.png")
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>AlgoSage</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!--================================================ END OF THE NAVBAR ================================================-->
+
+    <main>
+        <div class="mx-auto max-w-7xl py-6 sm:px-1 lg:px-8">
+            <div class="isolate rounded-xl bg-white px-6 py-2 sm:py-1 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center"></div>
+                <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+                    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                        <h2 class="mt-10 text-center text-4xl font-bold tracking-tight text-gray-900">AlgoSage</h2>
+                        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign
+                            in to your
+                            account</h2>
+                    </div>
+
+                    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                        <form class="space-y-6" action="#" method="POST">
+                            <div>
+                                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email
+                                    address</label>
+                                <div class="mt-2">
+                                    <input id="email" name="email" type="email" autocomplete="email" required
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <label for="password"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                                    <div class="text-sm">
+                                        <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot
+                                            password?</a>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <input id="password" name="password" type="password" autocomplete="current-password"
+                                        required
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="submit"
+                                    class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign
+                                    in</button>
+                            </div>
+                        </form>
+
+                        <p class="mt-10 text-center text-sm text-gray-500">
+                            Not a member?
+                            <a href="Register.html"
+                                class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Register</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- 
+
+    <section class="contact">
+
+             <form action="https://formspree.io/f/mgejgopb" method="POST" class="contact__form">
+                <div class="form__name">
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="Email Address" placeholder="Your Email Address" required>
+                <textarea name="Message" rows="7" placeholder="Message..." required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>  
+            <script src="https://cdn.tailwindcss.com"></script>
+            <div class="min-h-full">
+                <main>
+                    <div class="mx-auto max-w-7xl py-6 sm:px-1 lg:px-8">
+                        <div class="isolate rounded-xl bg-white px-6 py-2 sm:py-1 lg:px-8">
+                            <div class="mx-auto max-w-2xl text-center"></div>
+                            <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+                                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                                    <h2 class="mt-10 text-center text-4xl font-bold tracking-tight text-gray-900">
+                                        AlgoSage</h2>
+                                    <h2
+                                        class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+                                        Sign in to your account</h2>
+                                </div>
+
+                                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                                    <form class="space-y-6" action="#" method="POST">
+                                        <div>
+                                            <label for="email"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Email
+                                                address</label>
+                                            <div class="mt-2">
+                                                <input id="email" name="email" type="email" autocomplete="email"
+                                                    required
+                                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="flex items-center justify-between">
+                                                <label for="password"
+                                                    class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                                                <div class="text-sm">
+                                                    <a href="#"
+                                                        class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot
+                                                        password?</a>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <input id="password" name="password" type="password"
+                                                    autocomplete="current-password" required
+                                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <button type="submit"
+                                                class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign
+                                                in</button>
+                                        </div>
+                                    </form>
+
+                                    <p class="mt-10 text-center text-sm text-gray-500">
+                                        Not a member?
+                                        <a href="#"
+                                            class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Start
+                                            a 14 day free trial</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+    </section> -->
+
+
+
+
+
+
+
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4>AlgoSage</h4>
+                </a>
+                <p>
+                    Empowering Tomorrow's Tech, One Algorithm at a Time. © 2023 Algosage. All rights reserved. | Privacy
+                    Policy | Terms of Service | Crafted with ❤️ in Code. </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 9305366856</p>
+                    <p>dydevansh@gmail.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; AlgoSage Software</small>
+        </div>
+    </footer>
+
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
