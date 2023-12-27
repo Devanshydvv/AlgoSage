@@ -1,115 +1,191 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlgoSage</title>
-  <link rel="stylesheet" href="Multi-Step-Login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AlgoSage</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="Signup.css">
+    <!--ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
+    <!-- GOOGLE FONTS (MONTSERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle
+                ('window-scroll', window.scrollY > 0)
+        });
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/contact.css"> -->
 
-
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <style>
+        body {
+            background-image: url("/images/bg-texture.png")
+        }
+    </style>
 </head>
 
 <body>
-
-
-
-  <section id="Amazing-Login-Page">
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="#" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <input type="submit" value="Login" class="btn solid" />
-
-          </form>
-          <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <input type="submit" class="btn" value="Sign up" />
-
-          </form>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>AlgoSage</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
-      </div>
+    </nav>
+    <!--================================================ END OF THE NAVBAR ================================================-->
 
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-
-            <h3>New here ?</h3>
-            <p>
-              Welcome to Algosage! Begin your journey of coding excellence by signing up or logging in. Join our
-              community of learners dedicated to mastering Data Structures, Algorithms, and Competitive Coding. Let's
-              code, learn, and succeed together
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign up
-            </button>
+    <main>
+        <div class="mx-auto max-w-7xl py-6 sm:px-1 lg:px-8">
+          <div class="isolate rounded-xl bg-white px-6 py-2 sm:py-1 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center"></div>
+            <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+              <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <h2 class="mt-10 text-center text-4xl font-bold tracking-tight text-gray-900">AlgoSage</h2>
+                <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Create New
+                  Account</h2>
+              </div>
+  
+              <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <form class="space-y-6" action="#" method="POST">
+                  <div>
+                    <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Full Name</label>
+                    <div class="mt-2">
+                      <input id="name" name="name" type="text" autocomplete="given-name" required
+                        placeholder="   John Doe" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                    </div>
+                  </div>
+  
+                  <div>
+                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                    <div class="mt-2">
+                      <input id="email" name="email" type="email" autocomplete="email" required
+                        placeholder="    Example@email.com" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                    </div>
+                  </div>
+  
+                  <div>
+                    <label for="phoneNumber" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+                    <div class="mt-2">
+                      <input id="phoneNumber" name="phoneNumber" type="tel" autocomplete="tel" required
+                        placeholder="    0123456789" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                    </div>
+                  </div>
+  
+                  <div>
+                    <label for="collegeName" class="block text-sm font-medium leading-6 text-gray-900">College Name</label>
+                    <div class="mt-2">
+                      <input id="collegeName" name="collegeName" type="text" autocomplete="college-name" required
+                        placeholder="    University of California, Berkeley" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                    </div>
+                  </div>
+  
+                  <div>
+                    <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                    <div class="mt-2">
+                      <input id="password" name="password" type="password" autocomplete="current-password" required
+                        placeholder="    ********" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                    </div>
+                  </div>
+  
+                  <div>
+                    <button type="submit"
+                      class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Register</button>
+                  </div>
+                </form>
+  
+                <p class="mt-10 text-center text-sm text-gray-500">
+                  Already a member?
+                  <a href="Login.html" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign in</a>
+                </p>
+              </div>
+            </div>
           </div>
-          <img src="img/log.svg" class="image" alt="" />
         </div>
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>One of us ?</h3>
-            <p>
-              You're not just a participant; you're one of us—a valued member of the Algosage community. Your dedication
-              to mastering Data Structures, Algorithms, and Competitive Coding is what makes us stronger. Together,
-              let's continue to learn, grow, and achieve new heights in the world of programming. </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Sign in
-            </button>
-          </div>
-          <img src="img/register.svg" class="image" alt="" />
+      </main>
+
+
+ 
+
+
+
+
+
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4>AlgoSage</h4>
+                </a>
+                <p>
+                    Empowering Tomorrow's Tech, One Algorithm at a Time. © 2023 Algosage. All rights reserved. | Privacy
+                    Policy | Terms of Service | Crafted with ❤️ in Code. </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 9305366856</p>
+                    <p>dydevansh@gmail.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="footer__copyright">
+            <small>Copyright &copy; AlgoSage Software</small>
+        </div>
+    </footer>
 
 
-  <!------ Multi Step Login ------>
-  <script src="script.js"></script>
-
-
-  <!------ Amazing Login Page ------>
-  <script>
-    const sign_in_btn = document.querySelector("#sign-in-btn");
-    const sign_up_btn = document.querySelector("#sign-up-btn");
-    const Container = document.querySelector(".container");
-
-    sign_up_btn.addEventListener("click", () => {
-      Container.classList.add("sign-up-mode");
-    });
-
-    sign_in_btn.addEventListener("click", () => {
-      Container.classList.remove("sign-up-mode");
-    });
-
-  </script>
-
+    <script src="./main.js"></script>
 
 </body>
 
